@@ -1,0 +1,31 @@
+<div class="container mt-5 pt-5">
+<h1 class="text-center"> Add Product</h1>
+
+
+<div class="row justify-content-center pt-5 mt-5">
+    <div class="col-6">
+
+<!-- form  -->
+<form [formGroup]="productForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Title</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="title">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Price</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="price">
+    </div>
+   
+    <button type="submit" class="btn btn-primary" (click)="submitForm()">Submit</button>
+  </form>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+</div>
